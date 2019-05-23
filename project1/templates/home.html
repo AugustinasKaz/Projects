@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>What book are you looking for</h1>
+
+    <form action="{{ url_for('results') }}" method="post">
+
+        <div class="form-group" width="350" >
+            <input autocomplete="off" autofocus class="form-control" name="duom" placeholder=" "type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}

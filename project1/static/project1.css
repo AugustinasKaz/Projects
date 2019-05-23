@@ -1,0 +1,40 @@
+.h2{
+    text-align: center;
+    padding: 30px;
+    background-color: #fff3e6;
+}
+.h1{
+    padding: 20px;
+}
+.container-fluid{
+    background-color:#fff3e6;
+}
+
+main .form-control{
+    display: inline-block;
+    width: auto;
+}
+
+main
+{
+    overflow-x: auto;
+    text-align: center;
+}
+.pic1{
+    max-height: 150px;
+    max-width: 200px;
+    width: 50px;
+    height: 50px;
+}
+.navbar-brand{
+     padding-left: 30px;
+     width: 100px;
+}  
+.rere{
+    padding-top:60px;
+}
+.bg-1{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+ 
