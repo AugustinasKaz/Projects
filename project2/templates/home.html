@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="{{url_for('static', filename = 'home.js') }}"></script> 
+    <link href="/static/project2.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6" id="Display_user">
+          <img id="Display_picture" src="/static/picture1.png" class="rounded-circle" alt="Cinque Terre"> 
+        </div>
+        
+      </div>
+
+   <div  class='row h-75  border-secondary'>
+      <div id='messages' class='col-6 bg-light border p-3 d-flex flex-column justify-content-end h-100' >
+        <!---messages go here -->
+      </div>
+
+
+    </div>
+<input class='col-6' type="text" id="myMessage">
+
+</div>
+
+<!---Username modal-->
+<div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+       <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <input type="text" id="user_input">
+            </div>
+            <div class="modal-footer">
+              <button id="button_modal" type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+            </div>
+          </div>   
+         </div>
+</div>
+
+  
+<!---Pictures modal-->
+<div class="container">
+  <div class="modal fade" id="PicsModal" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Choose your profile picture</h4>
+          </div>
+          <div class="modal-body">
+            <img id="pic1" src="/static/picture1.png" class="rounded-circle user_picture" alt="bridge" data-dismiss="modal"> 
+            <img id="pic2" src="/static/picture2.png" class="rounded-circle user_picture" alt="donald" data-dismiss="modal"> 
+            <img id="pic3" src="/static/picture3.png" class="rounded-circle user_picture" alt="view" data-dismiss="modal"> 
+          </div>
+        </div>   
+       </div>
+</div>
+  
+</body>
+</html>
+        
