@@ -5,4 +5,6 @@ urlpatterns = [
     path("", views.start),
     path("login/", views.index, name="index"),
     path("auth/", views.auth),
+    path('data/', views.UserData)
 ]
+
