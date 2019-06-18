@@ -37,10 +37,13 @@ def auth(request):
 
 @api_view(['GET', 'POST'])
 def UserData(request):
+  sub_type = request.body
+  sub_type = sub_type.decode('utf8').replace("'", '"')
+  sub_type = json.loads(sub_type)
   reddit = p1.reddit
   dict = {}
   lst = []
-  for submission in reddit.subreddit('all').hot(limit=10):
+  for submission in reddit.subreddit(sub_type['sort']).hot(limit=10):
     dict = {'title': submission.title, 'url': submission.url, 'upvotes': submission.score, 'subreddit': str(submission.subreddit), 'author': str(submission.author)}
     lst.append(dict)
 
