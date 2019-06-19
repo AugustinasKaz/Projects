@@ -1,5 +1,5 @@
 
-# project 4
+# Love calcuator API application
 
  Love calculator made with python(Django) and JavaScript(React)
 
