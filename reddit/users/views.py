@@ -48,10 +48,3 @@ def UserData(request):
     lst.append(dict)
 
   return HttpResponse(json.dumps(lst))
-
-def hellloo(request)
-
-asdadasd
-asdasd
-
-return hey
