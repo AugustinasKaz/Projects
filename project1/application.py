@@ -113,7 +113,7 @@ def book(code):
    book = db.execute("SELECT * FROM books WHERE isbn = :isbn", {"isbn": code}).fetchone()
    if book is None:
       return apology("no book")
-   res = requests.get('https://www.goodreads.com/book/review_counts.json', params={"key": "OpEFZNL2Q2nsZdVGE985Q", "isbns": code})
+   res = requests.get('https://www.goodreads.com/book/review_counts.json', params={"key": "#", "isbns": code})
    average_rating = res.json()['books'][0]['average_rating']
    count1 = res.json()['books'][0]['average_rating']
    count2 = res.json()['books'][0]['work_ratings_count']
