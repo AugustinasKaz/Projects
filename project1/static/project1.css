@@ -19,6 +19,7 @@ main
 {
     overflow-x: auto;
     text-align: center;
+    text-size:16px;
 }
 .pic1{
     max-height: 150px;
